@@ -41,3 +41,6 @@ env/
 Thumbs.db
 
 .env
+
+# Reports folder - contains generated data quality reports
+reports/
