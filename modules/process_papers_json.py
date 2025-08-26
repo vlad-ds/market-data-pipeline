@@ -17,8 +17,8 @@ from datetime import datetime
 from typing import Dict, List, Any, Optional
 import psycopg2
 
-from db_connection import get_database_connection, close_connection
-from create_papers_table import create_papers_table, check_table_exists
+from .db_connection import get_database_connection, close_connection
+from .create_papers_table import create_papers_table, check_table_exists
 
 # Configure logging
 logging.basicConfig(

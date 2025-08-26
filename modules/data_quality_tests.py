@@ -17,7 +17,7 @@ from datetime import datetime
 from typing import Dict, List, Tuple, Any
 import psycopg2
 
-from db_connection import get_database_connection, close_connection
+from .db_connection import get_database_connection, close_connection
 
 # Configure logging
 logging.basicConfig(

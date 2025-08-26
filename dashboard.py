@@ -16,7 +16,7 @@ from datetime import datetime, timedelta
 import logging
 
 # Import our database connection module
-from db_connection import get_database_connection, close_connection
+from modules.db_connection import get_database_connection, close_connection
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)

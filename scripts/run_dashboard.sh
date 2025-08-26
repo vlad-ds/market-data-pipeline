@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Move to parent directory (project root)
+cd "$(dirname "$0")/.."
+
 # Activate virtual environment
 source .venv/bin/activate
 

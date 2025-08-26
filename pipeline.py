@@ -21,9 +21,9 @@ from typing import Dict, List, Any, Optional
 import psycopg2
 
 # Import existing modules
-from db_connection import get_database_connection, close_connection
-from create_papers_table import create_papers_table, check_table_exists
-from data_quality_tests import DataQualityTester
+from modules.db_connection import get_database_connection, close_connection
+from modules.create_papers_table import create_papers_table, check_table_exists
+from modules.data_quality_tests import DataQualityTester
 
 # Import pyalex for API calls
 import pyalex

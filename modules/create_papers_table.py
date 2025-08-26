@@ -5,7 +5,7 @@ Uses the existing db_connection.py module for database connectivity.
 """
 
 import logging
-from db_connection import get_database_connection, close_connection
+from .db_connection import get_database_connection, close_connection
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
