@@ -2,3 +2,5 @@ streamlit==1.48.1
 pyalex==0.18
 psycopg2-binary==2.9.10
 python-dotenv==1.0.0
+pandas>=2.2.0
+plotly>=5.17.0

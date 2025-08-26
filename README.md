@@ -63,6 +63,18 @@ The pipeline consists of several components that work together to:
   - **Comprehensive Reporting**: Generates detailed quality reports
   - **Automated Testing**: Can be run independently or as part of the pipeline
 
+### 6. **Streamlit Dashboard (`dashboard.py`)** 🆕 **⭐ NEW FEATURE**
+- **Purpose**: Interactive web dashboard for visualizing and analyzing the AI papers data
+- **Key Features**:
+  - **Real-time Data**: Connects directly to your Neon database
+  - **Interactive Charts**: Publication trends, citation analysis, open access statistics
+  - **Key Metrics**: Total papers, recent additions, citation averages, open access percentage
+  - **Topic Analysis**: Domain and field distribution analysis
+  - **Journal Insights**: Top journals and publication sources
+  - **Data Quality Metrics**: Completeness and validation statistics
+  - **Beautiful UI**: Modern, responsive design with custom styling
+- **Usage**: `./run_dashboard.sh` (Linux/Mac) or `run_dashboard.bat` (Windows)
+
 ## Usage
 
 ### Prerequisites
@@ -98,6 +110,29 @@ python pipeline.py --help
 - ✅ **One command** instead of multiple scripts
 - ✅ **Automatic workflow** from API to database to quality tests
 - ✅ **Configurable parameters** for different use cases
+
+### 🆕 **NEW: Interactive Dashboard**
+
+Launch the Streamlit dashboard to visualize your data:
+
+```bash
+# Linux/Mac
+./run_dashboard.sh
+
+# Windows
+run_dashboard.bat
+
+# Manual launch (after activating virtual environment)
+source .venv/bin/activate  # or .venv\Scripts\activate.bat on Windows
+streamlit run dashboard.py
+```
+
+**Dashboard Features:**
+- 📊 **Real-time metrics** from your Neon database
+- 📈 **Interactive charts** for publication trends and citations
+- 🏷️ **Topic classification** insights
+- 📖 **Journal analysis** and rankings
+- 🔍 **Data quality metrics** and completeness stats
 - ✅ **Better error handling** and progress tracking
 - ✅ **Professional logging** with emojis for easy reading
 
